@@ -20,6 +20,10 @@ images.
 $ blender hand.blend --background --python render_batch.py -- --test
 ```
 
+## Features
+
+- [x] Output the annotation file in Labelme format
+
 ## 3D model
 
 The 3D model and texture image for the hand was created with
