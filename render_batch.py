@@ -130,6 +130,13 @@ def apply_lights():
             ob.data.energy = random.random() * 60.0
 
 
+def apply_dark_lights():
+    """Changes lights strength."""
+    for i in range(1, 6):
+        ob = bpy.data.objects['Light{}'.format(i)]
+        ob.data.energy = (2.0*random.random()-1.0)*5.0
+
+
 def get_render_pos(mat, pos):
     p = mat @ pos
     vx = p.x / -p.z * 3.888
